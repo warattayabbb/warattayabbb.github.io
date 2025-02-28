@@ -1,0 +1,122 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+body {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    height: 100vh;            
+    font-family: 'Bai Jamjuree', serif;
+    background-color: #ffe7e7;
+    margin: 0;   
+    margin-left: 150px; 
+}
+
+.containers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 90%;
+    width: 100%;
+    
+}
+
+.form-container {
+    flex: 1;
+    min-width: 400px;
+    width: auto;
+}
+h2 {
+    white-space: normal;
+    word-wrap: break-word;
+    overflow: visible;
+    font-size: 40px;
+    text-align: center;
+}
+.Ans {
+    display: flex;
+    
+}
+
+
+input {
+    padding: 15px;
+}
+
+.input1 {
+    
+    display: inline-block;
+}
+
+.input2 {
+   
+    display: inline-block;
+    margin-left: 34px;
+}
+
+.input3 {
+    
+    display: inline-block;
+    margin-left: 81px;
+}
+
+
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: left; 
+    gap: 20px; 
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+button {
+    text-align: center;
+    
+}
+.circle-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 250px;
+    height: 250px;
+}
+
+.circle {
+    width: 500px;
+    height: 500px;
+    background-color: rgb(255, 165, 191);
+    border-radius: 50%;
+    position: absolute;
+}
+
+svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .containers {
+        flex-direction: column;
+    }
+    
+    .circle {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 769px) and (max-width: 1024px){
+    .containers {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .circle {
+        width: 180px;
+        height: 180px;
+    }
+}

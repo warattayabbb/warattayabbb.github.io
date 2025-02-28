@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โปรแกรมคำนวณพื้นที่เซกเมนต์</title>
+    <link rel="stylesheet" href="style1.css">
+    <script>
+        function calculate() {
+            let S = parseFloat(document.getElementById("S").value);
+            let n = parseFloat(document.getElementById("n").value);
+            let r = parseFloat(document.getElementById("r").value);
+            
+            n = Math.max(3, Math.min(100, n)); // จำกัดจำนวนด้านให้อยู่ระหว่าง 3-100
+            
+            if (isNaN(S) || isNaN(n) || isNaN(r)) {
+                alert("กรุณากรอกตัวเลขให้ถูกต้อง");
+                return;
+            }
+
+            // คำนวณตามสูตรที่กำหนด
+            let I = 3.8267 + ((n - 3) * (n + 284)) / 200;
+            let A = (S / I) ** 2;
+
+            document.getElementById("A").innerHTML = "พื้นที่เซกเมนต์: " + A.toFixed(4); // ปัดเศษ 4 ตำแหน่ง
+
+            // วาดรูปหลายเหลี่ยมในวงกลม
+            let points = [];
+            for (let i = 0; i < n; i++) {
+                let angle = (i * 2 * Math.PI) / n;
+                let x = Math.cos(angle);
+                let y = Math.sin(angle);
+                points.push(`${x},${y}`);
+            }
+            document.querySelector("polygon").setAttribute("points", points.join(" "));
+        }
+
+        function resetForm() {
+            document.getElementById("S").value = "";
+            document.getElementById("n").value = "3";
+            document.getElementById("r").value = "";
+            document.getElementById("A").innerHTML = "พื้นที่เซกเมนต์: -";
+            document.querySelector("polygon").setAttribute("points", "");
+        }
+    </script>
+</head>
+<body>
+    <div class = "containers">
+        <div class = "form-container">
+            <h2>โปรแกรมคำนวณพื้นที่เซกเมนต์</h2>
+
+            <label for="S">ความยาวรอบรูป: </label>
+            <div class="input1">
+                <input type="number" id="S" placeholder="ป้อนความยาวรอบรูป">
+            </div><br><br>
+    
+            <label for="n">จำนวนด้าน: </label>
+            <div class="input2">
+                <input type="number" id="n" placeholder="ป้อนจำนวนด้าน" value="3" min="3" max="100">
+            </div><br><br>
+
+            <label for="r">รัศมี: </label>
+            <div class="input3">
+                <input type="number" id="r" placeholder="ป้อนรัศมี">
+            </div><br><br>
+
+            <div class="button-container">
+                <button onclick="calculate()">คำนวณ</button>
+                <button type="button" onclick="resetForm()">ยกเลิก</button>
+            </div>
+            <div class="Ans">
+                <h3>ผลลัพธ์</h3>
+            </div>
+    
+
+            <p id="A">พื้นที่เซกเมนต์: -</p>
+        </div>
+    
+
+        <div class="circle-container">
+            <div class="circle">
+                <svg id="polygonCanvas" viewBox="-1 -1 2 2">
+                    <polygon points="" fill="white"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
