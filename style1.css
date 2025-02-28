@@ -98,6 +98,9 @@ svg {
 }
 
 @media (max-width: 768px) {
+    body {
+        margin: 10px;
+    }
     .circle-container {
         flex-direction: column;
     }
@@ -133,10 +136,14 @@ svg {
 
 /* สำหรับคอมพิวเตอร์ */
 @media (min-width: 1024px) {
+    body {
+        justify-content: center;
+        margin-left: 150px;
+    }
     .circle {
         width: 500px;
         height: 500px;
-        transform: translateX(-100px);
+        transform: translateX(-200px);
         margin-top: 400px;
     }
 }
