@@ -98,69 +98,86 @@ svg {
     height: 100%;
 }
 
-@media (max-width: 768px) {
-    .containers{
-        padding: 10px;
-        justify-content: center;
-    }
-    .circle-container {
+/* ✅ มือถือ (หน้าจอไม่เกิน 767px) */
+@media (max-width: 767px) {
+    .containers {
         flex-direction: column;
+        padding: 20px;
     }
 
     .form-container {
-        flex: 1;
+        width: 90%;
         min-width: auto;
-        width: 100%;
-        padding: 5px; 
+        padding: 20px;
+        margin: 0 auto;
     }
-    
+
     .circle {
         width: 150px;
         height: 150px;
         margin-top: 20px;
-        transform: translateX(-10px); 
     }
-    .button-container {
+}
+
+/* ✅ iPad แนวตั้ง (768px - 1024px) */
+@media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .containers {
+        flex-direction: row;
         justify-content: center;
     }
-    .Ans {
+
+    .circle {
+        width: 300px;
+        height: 300px;
+    }
+
+    .form-container {
+        min-width: 500px;
+        max-width: 600px;
+    }
+}
+
+/* ✅ iPad แนวนอน (768px - 1366px) */
+@media (min-device-width: 768px) and (max-device-width: 1366px) and (orientation: landscape) {
+    .containers {
+        flex-direction: row;
         justify-content: center;
+        align-items: center;
     }
-}
 
-@media (min-device-width: 769px) and (max-device-width: 1024px) and (orientation: portrait) {
     .circle {
-        margin-top: 500px;
-        width: 350px;
-        height: 350px;
+        width: 250px;
+        height: 250px;
     }
+
     .form-container {
         min-width: 500px;
+        max-width: 600px;
     }
 }
 
-
-@media (min-device-width: 769px) and (max-device-width: 1366px) and (orientation: landscape) {
-    .circle {
-        margin-top: 100px;
-        width: 200px;
-        height: 200px;
-    }
-    .form-container {
-        min-width: 500px;
-    }
-}
-
-/* สำหรับคอมพิวเตอร์ */
+/* ✅ คอมพิวเตอร์ (1025px ขึ้นไป) */
 @media (min-width: 1025px) {
-    body {
+    .containers {
+        display: flex;
+        flex-direction: row;
         justify-content: center;
-        margin-left: 150px;
+        align-items: center;
+        gap: 0px; /* ลบช่องว่างระหว่างฟอร์มกับวงกลม */
     }
+
+    .circle-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 300px;
+        position: relative;
+        top: -50px; /* ดันวงกลมขึ้นให้ใกล้กับช่องอินพุต */
+    }
+
     .circle {
-        width: 500px;
-        height: 500px;
-        transform: translateX(-200px);
-        margin-top: 450px;
+        width: 250px;
+        height: 250px;
     }
 }
