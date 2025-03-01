@@ -106,7 +106,7 @@ svg {
     .form-container {
         width: 100%;
         max-width: 90%;
-        padding: 20px;
+        padding: 15px;
         margin: 0 auto;
     }
 
@@ -126,14 +126,15 @@ svg {
     
     .circle-container {
         justify-content: center;
-        margin-top: 30px;
+        margin-top: 20px; 
     }
     
     .circle {
-        width: 150px;
+        width: 150px; 
         height: 150px;
     }
 }
+
 
 @media (max-width: 1280px) {
     .containers {
