@@ -97,7 +97,7 @@ svg {
     height: 100%;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
     .containers {
         flex-direction: column;
         padding: 20px; 
