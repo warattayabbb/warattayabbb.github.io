@@ -141,9 +141,20 @@ svg {
     }
 
     .circle {
-        margin-top: 20px;
-        width: 300px;
-        height: 300px;
+        width: 350px;
+        height: 350px;
+    }
+
+    .circle-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        position: relative;
+        top: 100px; /* ดันวงกลมขึ้นให้ใกล้กับช่องอินพุต */
+        
+
     }
 
     .form-container {
