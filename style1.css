@@ -24,7 +24,7 @@ body {
 
 .form-container {
     flex: 1;
-    min-width: 400px;
+    min-width: 300px;
     width: auto;
 }
 h2 {
@@ -127,7 +127,7 @@ svg {
     }
     
     .circle-container {
-        align-items: center;
+        justify-content: center;
     }
     .circle {
         width: 180px;
