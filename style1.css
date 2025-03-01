@@ -102,7 +102,7 @@ svg {
 @media (max-width: 767px) {
     .containers {
         flex-direction: column;
-        padding: 10px;
+        padding: 30px;
     }
 
     .form-container {
