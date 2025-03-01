@@ -137,12 +137,6 @@ svg {
 
 
 
-
-/* ✅ iPad แนวตั้ง (768px - 1024px) */
-
-
-
-
 @media (max-width: 1280px) {
     .containers {
         display: flex;
@@ -161,7 +155,7 @@ svg {
         height: 100px;
         position: relative;
         top: 100px; /* ดันวงกลมขึ้นให้ใกล้กับช่องอินพุต */
-        
+        translate: (-20px, 0px);
 
     }
 
