@@ -125,6 +125,11 @@ svg {
         flex: 1; /* ให้ช่องอินพุตขยายเท่ากัน */
         min-width: 80px;
     }
+    
+    .circle {
+        width: 180px;
+        height: 180px;
+    }
 }
 
 
@@ -180,14 +185,15 @@ svg {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 500px;
-        height: 500px;
+        width: 100px;
+        height: 100px;
         position: relative;
-        top: 200px; /* ดันวงกลมขึ้นให้ใกล้กับช่องอินพุต */
+        top: 100px; /* ดันวงกลมขึ้นให้ใกล้กับช่องอินพุต */
+        right: 300px;
     }
 
     .circle {
-        width: 250px;
-        height: 250px;
+        width: 400px;
+        height: 400px;
     }
 }
