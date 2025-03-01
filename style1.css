@@ -135,9 +135,45 @@ svg {
     }
 }
 
+@media (min-width: 767px) {
+    .containers {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .form-container {
+        width: 100%;
+        max-width: 90%;
+        padding: 15px;
+        margin: 0 auto;
+    }
+
+    .Ans {
+        display: flex;
+        flex-direction: row; /* ทำให้ช่องอินพุตอยู่ในบรรทัดเดียวกัน */
+        flex-wrap: nowrap; /* ป้องกันการเลื่อนลง */
+        justify-content: center;
+        gap: 10px;
+    }
+
+    input {
+        padding: 10px;
+        flex: 1; /* ให้ช่องอินพุตขยายเท่ากัน */
+        min-width: 80px;
+    }
+    
+    .circle-container {
+        align-items: center;
+    }
+    .circle {
+        width: 180px;
+        height: 180px;
+    }
+}
+
 
 /* ✅ iPad แนวตั้ง (768px - 1024px) */
-@media (max-width: 1024px) {
+@media (max-width: 1124px) {
     .containers {
         display: flex;
         flex-direction: row;
