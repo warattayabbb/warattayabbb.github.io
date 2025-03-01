@@ -127,6 +127,7 @@ svg {
     }
 
     .circle {
+        margin-top: 20px;
         width: 300px;
         height: 300px;
     }
@@ -170,10 +171,10 @@ svg {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 300px;
-        height: 300px;
+        width: 500px;
+        height: 500px;
         position: relative;
-        top: -50px; /* ดันวงกลมขึ้นให้ใกล้กับช่องอินพุต */
+        top: 200px; /* ดันวงกลมขึ้นให้ใกล้กับช่องอินพุต */
     }
 
     .circle {
