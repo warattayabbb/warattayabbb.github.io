@@ -139,13 +139,12 @@ svg {
 /* ✅ iPad แนวตั้ง (768px - 1024px) */
 @media (min-device-width: 768px) {
     .containers {
+        display: flex;
         flex-direction: row;
         justify-content: center;
-    }
+        align-items: center;
+        gap: 0px; /* ลบช่องว่างระหว่างฟอร์มกับวงกลม */
 
-    .circle {
-        width: 350px;
-        height: 350px;
     }
 
     .circle-container {
@@ -155,16 +154,23 @@ svg {
         width: 100px;
         height: 100px;
         position: relative;
-        top: 100px; /* ดันวงกลมขึ้นให้ใกล้กับช่องอินพุต */
+        top: 300px; /* ดันวงกลมขึ้นให้ใกล้กับช่องอินพุต */
+        right: 20px;
         
 
     }
+
+    .circle {
+        width: 400px;
+        height: 400px;
+    }
+}
 
     .form-container {
         min-width: 500px;
         max-width: 600px;
     }
-}
+
 
 
 
