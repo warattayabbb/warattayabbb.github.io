@@ -146,13 +146,13 @@ svg {
     }
 
     .circle {
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
     }
 }
 
 
-@media (min-width: 1280px) {
+@media (max-width: 720px) and (min-width: 1280px) {
     .containers {
         display: flex;
         flex-direction: row;
