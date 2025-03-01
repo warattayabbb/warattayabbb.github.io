@@ -119,21 +119,6 @@ svg {
     }
 }
 
-/* สำหรับแท็บเล็ต*/
-@media (min-width: 769px) and (max-width: 1000px) {
-    .circle-container {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .circle {
-        width: 180px;
-        height: 180px;
-        transform: translateX(-15px);
-    }
-
-}
-
 /* สำหรับคอมพิวเตอร์ */
 @media (min-width: 1024px) {
     body {
@@ -144,6 +129,6 @@ svg {
         width: 500px;
         height: 500px;
         transform: translateX(-200px);
-        margin-top: 400px;
+        margin-top: 450px;
     }
 }
