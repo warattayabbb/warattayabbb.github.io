@@ -8,6 +8,7 @@ body {
     font-family: 'Bai Jamjuree', serif;
     background-color: #ffe7e7;
     margin: 10px;
+    padding: 10px;
 }
 
 .containers {
@@ -100,6 +101,7 @@ svg {
 @media (max-width: 768px) {
     .containers{
         padding: 20px;
+        justify-content: center;
     }
     .circle-container {
         flex-direction: column;
@@ -126,10 +128,18 @@ svg {
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
     .circle {
-        width: 180px;
-        height: 180px;
+        width: 140px;
+        height: 140px;
+    }
+}
+
+
+@media (min-device-width: 768px) and (max-device-width: 1366px) and (orientation: landscape) {
+    .circle {
+        width: 160px;
+        height: 160px;
     }
 }
 
