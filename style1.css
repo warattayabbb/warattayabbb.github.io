@@ -27,6 +27,7 @@ body {
     min-width: 200px;
     width: auto;
 }
+
 h2 {
     white-space: normal;
     word-wrap: break-word;
@@ -36,9 +37,7 @@ h2 {
 }
 .Ans {
     display: flex;
-    
 }
-
 
 input {
     padding: 15px;
@@ -101,19 +100,19 @@ svg {
 @media (max-width: 767px) {
     .containers {
         flex-direction: column;
-        padding: 20px; /* เพิ่ม padding ไม่ให้ชิดขอบ */
+        padding: 20px; 
     }
 
     .form-container {
         width: 100%;
         max-width: 90%;
-        padding: 20px; /* เพิ่ม padding ภายในฟอร์ม */
+        padding: 20px;
         margin: 0 auto;
     }
 
     .Ans {
         display: flex;
-        flex-direction: row; /* ช่อง input อยู่ในบรรทัดเดียวกัน */
+        flex-direction: row;
         flex-wrap: nowrap;
         justify-content: center;
         gap: 10px;
@@ -127,11 +126,11 @@ svg {
     
     .circle-container {
         justify-content: center;
-        margin-top: 30px; /* เพิ่ม margin ด้านบนให้ห่างจากฟอร์ม */
+        margin-top: 30px;
     }
     
     .circle {
-        width: 150px; /* ลดขนาดของวงกลม */
+        width: 150px;
         height: 150px;
     }
 }
@@ -142,8 +141,7 @@ svg {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 0px; /* ลบช่องว่างระหว่างฟอร์มกับวงกลม */
-
+        gap: 0px;
     }
 
     .circle-container {
@@ -153,16 +151,16 @@ svg {
         width: 100px;
         height: 100px;
         position: relative;
-        top: 100px; /* ดันวงกลมขึ้นให้ใกล้กับช่องอินพุต */
-        translate: (-50px, 0px);
-
+        top: 100px;
+        left: 50px;
     }
 
     .circle {
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
     }
 }
+
 
 @media (min-width: 1500px) {
     .containers {
@@ -170,7 +168,7 @@ svg {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 0px; /* ลบช่องว่างระหว่างฟอร์มกับวงกลม */
+        gap: 0px;
 
     }
 
@@ -181,7 +179,7 @@ svg {
         width: 100px;
         height: 100px;
         position: relative;
-        top: 100px; /* ดันวงกลมขึ้นให้ใกล้กับช่องอินพุต */
+        top: 100px; 
         right: 20px;
         
 
