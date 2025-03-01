@@ -27,7 +27,6 @@ body {
     min-width: 200px;
     width: auto;
 }
-
 h2 {
     white-space: normal;
     word-wrap: break-word;
@@ -39,6 +38,7 @@ h2 {
     display: flex;
     
 }
+
 
 input {
     padding: 15px;
@@ -61,6 +61,7 @@ input {
     margin-left: 81px;
 }
 
+
 .button-container {
     margin-top: 20px;
     display: flex;
@@ -68,13 +69,12 @@ input {
     gap: 20px; 
     width: 100%;
     margin-bottom: 20px;
+    
 }
-
 button {
     text-align: center;
     
 }
-
 .circle-container {
     display: flex;
     justify-content: center;
@@ -101,36 +101,38 @@ svg {
 @media (max-width: 767px) {
     .containers {
         flex-direction: column;
-        padding: 30px;
+        padding: 20px; /* เพิ่ม padding ไม่ให้ชิดขอบ */
     }
 
     .form-container {
         width: 100%;
         max-width: 90%;
-        padding: 15px;
+        padding: 20px; /* เพิ่ม padding ภายในฟอร์ม */
         margin: 0 auto;
     }
 
     .Ans {
         display: flex;
-        flex-direction: row; 
-        flex-wrap: nowrap; 
+        flex-direction: row; /* ช่อง input อยู่ในบรรทัดเดียวกัน */
+        flex-wrap: nowrap;
         justify-content: center;
         gap: 10px;
     }
 
     input {
         padding: 10px;
-        flex: 1; 
+        flex: 1;
         min-width: 80px;
     }
     
     .circle-container {
         justify-content: center;
+        margin-top: 30px; /* เพิ่ม margin ด้านบนให้ห่างจากฟอร์ม */
     }
+    
     .circle {
-        width: 180px;
-        height: 180px;
+        width: 150px; /* ลดขนาดของวงกลม */
+        height: 150px;
     }
 }
 
@@ -140,7 +142,8 @@ svg {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 0px; 
+        gap: 0px; /* ลบช่องว่างระหว่างฟอร์มกับวงกลม */
+
     }
 
     .circle-container {
@@ -152,6 +155,7 @@ svg {
         position: relative;
         top: 100px; /* ดันวงกลมขึ้นให้ใกล้กับช่องอินพุต */
         translate: (-50px, 0px);
+
     }
 
     .circle {
@@ -166,7 +170,8 @@ svg {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 0px; 
+        gap: 0px; /* ลบช่องว่างระหว่างฟอร์มกับวงกลม */
+
     }
 
     .circle-container {
@@ -176,9 +181,10 @@ svg {
         width: 100px;
         height: 100px;
         position: relative;
-        top: 100px; 
+        top: 100px; /* ดันวงกลมขึ้นให้ใกล้กับช่องอินพุต */
         right: 20px;
         
+
     }
 
     .circle {
