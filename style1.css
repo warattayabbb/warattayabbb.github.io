@@ -134,7 +134,7 @@ svg {
 
 
 /* ✅ iPad แนวตั้ง (768px - 1024px) */
-@media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media (min-device-width: 768px) {
     .containers {
         flex-direction: row;
         justify-content: center;
@@ -152,33 +152,16 @@ svg {
     }
 }
 
-/* ✅ iPad แนวนอน (768px - 1366px) */
-@media (min-device-width: 768px) and (max-device-width: 1366px) and (orientation: landscape) {
-    .containers {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
 
-    .circle {
-        width: 250px;
-        height: 250px;
-    }
 
-    .form-container {
-        min-width: 500px;
-        max-width: 600px;
-    }
-}
-
-/* ✅ คอมพิวเตอร์ (1025px ขึ้นไป) */
-@media (min-width: 1025px) {
+@media (min-width: 1280px) {
     .containers {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         gap: 0px; /* ลบช่องว่างระหว่างฟอร์มกับวงกลม */
+
     }
 
     .circle-container {
@@ -190,7 +173,9 @@ svg {
         position: relative;
         top: 100px; /* ดันวงกลมขึ้นให้ใกล้กับช่องอินพุต */
         right: 300px;
+
     }
+
 
     .circle {
         width: 400px;
