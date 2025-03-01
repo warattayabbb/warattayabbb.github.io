@@ -152,7 +152,7 @@ svg {
 }
 
 
-@media (max-width: 1280px) and (min-width: 720px) {
+@media (max-width: 1280px) {
     .containers {
         display: flex;
         flex-direction: row;
