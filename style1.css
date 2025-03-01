@@ -126,6 +126,9 @@ svg {
         min-width: 80px;
     }
     
+    .circle-container {
+        align-items: center;
+    }
     .circle {
         width: 180px;
         height: 180px;
