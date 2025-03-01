@@ -135,41 +135,45 @@ svg {
     }
 }
 
-@media (min-width: 768px) {
+
+
+
+/* ✅ iPad แนวตั้ง (768px - 1024px) */
+@media (max-width: 1024px) {
     .containers {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    .form-container {
-        width: 100%;
-        max-width: 90%;
-        padding: 15px;
-        margin: 0 auto;
-    }
-
-    .Ans {
         display: flex;
-        flex-direction: row; /* ทำให้ช่องอินพุตอยู่ในบรรทัดเดียวกัน */
-        flex-wrap: nowrap; /* ป้องกันการเลื่อนลง */
+        flex-direction: row;
         justify-content: center;
-        gap: 10px;
+        align-items: center;
+        gap: 0px; /* ลบช่องว่างระหว่างฟอร์มกับวงกลม */
+
     }
 
-    input {
-        padding: 10px;
-        flex: 1; /* ให้ช่องอินพุตขยายเท่ากัน */
-        min-width: 80px;
-    }
-    
     .circle-container {
+        display: flex;
+        justify-content: center;
         align-items: center;
+        width: 100px;
+        height: 100px;
+        position: relative;
+        top: 300px; /* ดันวงกลมขึ้นให้ใกล้กับช่องอินพุต */
+        right: 20px;
+        
+
     }
+
     .circle {
-        width: 250px;
-        height: 250px;
+        width: 400px;
+        height: 400px;
     }
 }
+
+    .form-container {
+        min-width: 500px;
+        max-width: 600px;
+    }
+
+
 
 
 @media (min-width: 1280px) {
