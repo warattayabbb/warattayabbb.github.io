@@ -131,8 +131,8 @@ svg {
 @media (min-device-width: 769px) and (max-device-width: 1024px) and (orientation: portrait) {
     .circle {
         margin-top: 500px;
-        width: 200px;
-        height: 200px;
+        width: 400px;
+        height: 400px;
     }
     .form-container {
         min-width: 500px;
@@ -140,7 +140,7 @@ svg {
 }
 
 
-@media (min-device-width: 768px) and (max-device-width: 1366px) and (orientation: landscape) {
+@media (min-device-width: 769px) and (max-device-width: 1366px) and (orientation: landscape) {
     .circle {
         margin-top: 100px;
         width: 200px;
