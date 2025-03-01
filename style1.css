@@ -137,7 +137,7 @@ svg {
 
 @media (min-width: 768px) {
     .containers {
-        flex-direction: column;
+        flex-direction: row;
         padding: 10px;
     }
 
